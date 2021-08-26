@@ -21,7 +21,7 @@ export class SimpleFormComponent implements OnInit {
   today = new Date();
   dateControl = new FormControl('', [Validators.required]);
   basicForm = this.fb.group({
-    username: this.dateControl,
+    date: this.dateControl,
   });
 
   constructor(
