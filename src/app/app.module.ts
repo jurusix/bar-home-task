@@ -10,7 +10,7 @@ import { ConfigService } from './core/config/config.service';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { ExchangeRatesComponent } from './pages/exchange-rates/exchange-rates.component';
 import { AddOrSubtractPipe } from './pipes/add-or-subtract.pipe';
-import { ShellComponent } from './shell/shell/shell.component';
+import { ShellComponent } from './shell/shell.component';
 
 export function loadConfigFactory(config: ConfigService) {
   return () => config.init();
