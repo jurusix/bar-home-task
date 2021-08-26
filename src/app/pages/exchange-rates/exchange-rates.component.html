@@ -1,0 +1,11 @@
+<div class="border no-border-bottom p-0-5">Exchange rates</div>
+<div class="row border no-border-bottom py-1 min-h-260">
+  <div class="col">
+    <app-simple-form (onFormSubmit)="onSubmit($event)"></app-simple-form>
+  </div>
+
+  <div class="col">
+    <app-table [rates]="rates"></app-table>
+  </div>
+</div>
+<div class="border p-0-5 min-h-38"></div>

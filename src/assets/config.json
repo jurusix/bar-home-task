@@ -1,0 +1,7 @@
+{
+  "apiUrl": "http://api.exchangeratesapi.io/v1/",
+  "accessKey": "5171b504945d501cb7f3cb721c2a44b2",
+  "accessKeyParam": "access_key",
+  "symbols": ["USD", "AUD", "CAD", "PLN", "MXN"],
+  "symbolsParam": "symbols"
+}

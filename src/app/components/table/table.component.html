@@ -1,0 +1,27 @@
+<table>
+  <caption>
+    Exchange Rates Table
+  </caption>
+  <thead>
+    <tr>
+      <th class="mouse-pointer" (click)="changeSortDirection()">Currency</th>
+      <th>Buy</th>
+      <th>Sell</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr
+      *ngFor="
+        let rate of rates
+          | keyvalue
+            : (sortDirection !== sortDirectionEnum.ASC
+                ? keyDescOrder
+                : undefined)
+      "
+    >
+      <td>{{ rate.key }}</td>
+      <td>{{ rate.value | addOrSubtract: -5 | number: "1.4-4" }}</td>
+      <td>{{ rate.value | addOrSubtract: 5 | number: "1.4-4" }}</td>
+    </tr>
+  </tbody>
+</table>
